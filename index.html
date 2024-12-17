@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Saravanan R Portfolio</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Boxicons for icons -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+    
+</head>
+<body>
+
+
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="portfolio-name">Portfolio</div> <!-- Website title -->
+        <ul class="nav-buttons"> <!-- Navigation buttons -->
+            <li><a href="#home" class="active">Home</a></li> <!-- Link to home section -->
+            <li><a href="#about">About</a></li> <!-- Link to about section -->
+            <li><a href="#skills">Skills</a></li> <!-- Link to skills section -->
+            <li><a href="#projects">Projects</a></li> <!-- Link to projects section -->
+            <li><a href="#contact">Contact</a></li> <!-- Link to contact section -->
+            <!-- Theme Switcher -->
+            <div class="theme-switch" onclick="toggleTheme()">
+                <span>Light</span>
+                <i class='bx bx-sun'></i>
+                <i class='bx bx-moon' style="display:none;"></i>
+                <span>Dark</span>
+            </div>
+        </ul>
+    </nav>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 class="animate-text">Hello, I'm</h3>
+            <h1 class="animate-text delay-1">Saravanan R</h1>
+            <h3 class="animate-text delay-2">A <span>Java Fullstack Developer</span></h3>
+            <p class="animate-text delay-3">I am a motivated and dedicated Fullstack Developer skilled in Java, SQL, and frontend technologies. I am eager to contribute to software development projects and create impactful solutions.</p>
+            <!-- Social media links -->
+            <div class="social-media animate-text delay-4">
+                <a href="https://linkedin.com/in/saravanan-r-fullstackdeveloper" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:saravananramv@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                <a href="https://github.com/smartsaravanan16/" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/share/12K5zqZW3dm/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://instagram.com/smart_saro_16" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/9080116501" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <br><br>
+            <!-- Button to download the CV -->
+            <a href="SARAVANAN R.pdf" class="btn animate-text delay-4" target="_blank">Download Resume</a>
+        </div>
+        <div class="content animate-text delay-2">
+            <!-- Profile photo -->
+            <img src="SARAVANAN R.jpg" alt="Profile Photo" class="profile-image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I am Saravanan R, a passionate and highly motivated Java Fullstack Developer eager to make an impact in the tech world. With a Bachelor of Engineering in Electronics and Communication Engineering (CGPA: 8.296) from the Knowledge Institute of Technology, Salem, I bring a solid technical foundation and an unrelenting desire to learn and grow.
+                I specialize in Java and its ecosystem, including frameworks like Hibernate and Spring, coupled with hands-on experience in front-end technologies like HTML, CSS, JavaScript, and JSP. My expertise extends to working with databases using MySQL and JDBC, enabling me to craft seamless full-stack solutions.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <h2>My Skills</h2>
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <div class="software-skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <!-- Skill with progress bar -->
+                    <li>Java<span class="skill-percentage">85%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>HTML/CSS<span class="skill-percentage">80%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>JavaScript<span class="skill-percentage">80%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>SQL<span class="skill-percentage">75%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    <li>Hibernate<span class="skill-percentage">70%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>Spring Framework<span class="skill-percentage">65%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Time management<span class="skill-percentage">95%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>Teamwork<span class="skill-percentage">90%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>Problem-Solving<span class="skill-percentage">85%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>Adaptibility<span class="skill-percentage">85%</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <h2>My Projects</h2>
+    <section id="projects" class="projects-section">
+        <div class="project">
+            <a href="https://github.com/smartsaravanan16/LoginForm" target="_blank" class="project-title">
+                <h3>Events Registration Website</h3>
+            </a>
+            <p>Developed an event registration site with forms and database integration using HTML, CSS, JDBC, JSP, and MySQL.</p>
+            <div class="technologies">
+                <strong>Technologies Used:</strong> HTML, CSS, JDBC, JSP, MySQL
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/YOUR_USERNAME/medical-monitoring" target="_blank" class="project-title">
+                <h3>Medical Monitoring Website</h3>
+            </a>
+            <p>Created a user-friendly medical event signup site with accessibility features using HTML and CSS.</p>
+            <div class="technologies">
+                <strong>Technologies Used:</strong> HTML, CSS
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <h2>Contact Me</h2>
+    <section id="contact" class="contact-section">
+        <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <!-- Name input field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <!-- Email input field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <!-- Message textarea -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Saravanan R. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/saravanan-r-fullstackdeveloper" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="mailto:saravananramv@gmail.com"><i class='bx bx-envelope'></i></a>
+                <a href="https://wa.me/9080116501" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Add this line to link the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

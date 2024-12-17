@@ -1,0 +1,1656 @@
+/* Add this to your port.css */
+body {
+    background-color: #B2BEB5;  /* Ash gray */
+    background-image: 
+        radial-gradient(at 47% 33%, #C0C8C1 0, transparent 59%), 
+        radial-gradient(at 82% 65%, #A5B0A8 0, transparent 55%),
+        radial-gradient(at 23% 75%, #CBD1CD 0, transparent 50%);
+    position: relative;
+    min-height: 100vh;
+    color: #000000;
+}
+
+/* Add subtle animated shapes */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: 
+        linear-gradient(217deg, rgba(178, 190, 181, 0.08), rgba(178, 190, 181, 0) 70.71%),
+        linear-gradient(127deg, rgba(165, 176, 168, 0.08), rgba(165, 176, 168, 0) 70.71%),
+        linear-gradient(336deg, rgba(203, 209, 205, 0.08), rgba(203, 209, 205, 0) 70.71%);
+    animation: gradientMove 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Dark mode background */
+body.dark-mode {
+    background-color: #4A4E4D;  /* Darker Ash gray for dark mode */
+    background-image: 
+        radial-gradient(at 47% 33%, #5C6160 0, transparent 59%), 
+        radial-gradient(at 82% 65%, #3D4241 0, transparent 55%),
+        radial-gradient(at 23% 75%, #696E6D 0, transparent 50%);
+    color: #ffffff;
+}
+
+body.dark-mode::before {
+    opacity: 0.2;
+    background: 
+        linear-gradient(217deg, rgba(92, 97, 96, 0.12), rgba(92, 97, 96, 0) 70.71%),
+        linear-gradient(127deg, rgba(61, 66, 65, 0.12), rgba(61, 66, 65, 0) 70.71%),
+        linear-gradient(336deg, rgba(105, 110, 109, 0.12), rgba(105, 110, 109, 0) 70.71%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the ends */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dee2e6; /* Light border */
+}
+
+.portfolio-name {
+    font-size: 32px;
+    font-weight: 600;
+    color: #4834DF;  /* Vibrant purple for portfolio name */
+    text-shadow: 1px 1px 2px rgba(72, 52, 223, 0.1);
+}
+
+.nav-buttons {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Aligns buttons in a row */
+}
+
+.nav-buttons li {
+    margin-left: 20px; /* Space between buttons */
+}
+
+.nav-buttons a {
+    color: #000000;
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* Remove blue background */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+    .nav-buttons li {
+        display: inline-block; /* Make list items inline */
+        margin: 0 10px; /* Add some spacing */
+    }
+    .nav-buttons a {
+        text-decoration: none; /* Remove underline */
+        padding: 10px 20px; /* Add padding for button shape */
+        background-color: #007BFF; /* Initial button color */
+        color: white; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    .nav-buttons a:hover,
+    .nav-buttons a:focus {
+        background-color: #e9ecef; /* Light gray on hover */
+        color: #007BFF; /* Blue text on hover */
+    }
+/* Add this to your port.css */
+body {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text for better contrast */
+}
+
+/* ... existing styles ... */
+
+.footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333333; /* Dark text */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for spacing */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    border-top: 1px solid #dee2e6; /* Light border */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.footer {
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Add this to your port.css */
+.text-image-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: left; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    text-align: left; /* Align text to the left */
+    margin: 20px 0;
+}
+
+.centered-text {
+    margin-right: 50px; /* Space between text and image */
+    max-width: 100%; /* Limit the width of the text */
+}
+
+.round-image {
+    width: 250px; /* Set the width of the image (increase size) */
+    height: 250px; /* Set the height of the image (increase size) */
+    border-radius: 100%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+/* Add this to your port.css */
+.social-media {
+    display: flex; /* Use flexbox for layout */
+    justify-content: left; /* Center the icons horizontally */
+    margin-top: 20px; /* Space above the social media icons */
+}
+
+.social-media a {
+    display: inline-flex; /* Make links inline-flex for better alignment */
+    justify-content: center; /* Center the icon within the link */
+    align-items: center; /* Center the icon vertically */
+    width: 60px;
+    height: 60px;
+    margin: 0 10px; /* Space between icons */
+    background: #007BFF; /* Background color for the icon container */
+    border-radius: 50%; /* Make the container round */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    background: #0056b3; /* Darker background on hover */
+}
+
+.social-media a i {
+    font-size: 1.8em;
+}
+
+/* Add this to your port.css */
+.btn {
+    display: inline-block; /* Make it an inline block */
+    padding: 10px 20px; /* Add padding for size */
+    background-color: #007BFF; /* Attractive blue background */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    font-size: 16px; /* Font size */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Add this to your port.css */
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+    width: 100%; /* Full width for the container */
+}
+
+.software-skills, .soft-skills {
+    width: 80%;
+    max-width: 600px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.software-skills:hover, .soft-skills:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15),
+                -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+.skills-section h2 {
+    color: #007BFF; /* Blue color for the section title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.skill-percentage {
+    font-weight: bold; /* Bold percentage text */
+    color: #007BFF; /* Blue color for percentage */
+    margin-left: 10px; /* Space between skill name and percentage */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin-bottom: 15px; /* Space between skill items */
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress {
+    background: linear-gradient(90deg, #007BFF, #00bcd4);
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+/* Add this to your port.css */
+.projects-section {
+    margin: 40px 0; /* Add some margin for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.projects-section h2 {
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Change color as needed */
+    margin-bottom: 20px; /* Space below the title */
+}
+/* Add this to your CSS file (port.css) */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between cards */
+}
+
+.project {
+    width: 100%; /* Ensure each project takes full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+    padding: 20px; /* Optional: Add padding for aesthetics */
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text */
+    border: 1px solid #dee2e6; /* Light border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add this to your port.css */
+.projects-section {
+    margin: 40px 0; /* Add some margin for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+
+/* Add this to your port.css */
+.project {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15),
+                -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+.technologies {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 8px;
+}
+
+.technologies strong {
+    color: #007BFF;
+}
+
+/* Add this to your port.css */
+.github-link {
+    display: inline-flex; /* Make it inline-flex for better alignment */
+    align-items: center; /* Center the icon vertically */
+    margin-top: 10px; /* Space above the link */
+    color: #ffffff; /* White text color */
+    background-color: #333; /* Dark background for the link */
+    padding: 10px 15px; /* Padding for the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.github-link:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.github-link i {
+    margin-right: 5px; /* Space between icon and text */
+    color: #ffffff; /* White color for the icon */
+}
+
+
+/* Add this to your port.css */
+.social-media {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px; /* Space above the social media icons */
+}
+
+.social-media a {
+    display: inline-flex; /* Make links inline-flex for better alignment */
+    justify-content: center; /* Center the icon within the link */
+    align-items: center; /* Center the icon vertically */
+    width: 50px; /* Set width for the icon container */
+    height: 50px; /* Set height for the icon container */
+    margin: 0 10px; /* Space between icons */
+    background: #007BFF; /* Background color for the icon container */
+    border-radius: 50%; /* Make the container round */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    background: #0056b3; /* Darker background on hover */
+}
+
+
+        /* General reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-buttons {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-buttons li {
+            margin: 0 15px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            color: #00bcd4;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(to right, #00bcd4, #009688);
+            color: #fff;
+        }
+
+        .home-content h1 {
+            font-size: 3em;
+        }
+
+        .round-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #008c8c;
+        }
+
+        .skills-section, .about-section, .projects-section, .contact-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #00bcd4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    
+        /* Dark and Light Theme Switcher */
+        .theme-switch {
+            margin-left: auto;
+            background: #f0f0f0;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .theme-switch span {
+            margin: 0 5px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        body.dark-mode a {
+            color: #00bcd4;
+        }
+
+        body.dark-mode .theme-switch {
+            background: #333;
+            color: #ffffff;
+        }
+
+        body.dark-mode .theme-switch span {
+            color: #ffffff;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+.profile-image {
+    width: 300px;  /* Medium width */
+    height: 350px; /* Proportional height */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    border: 2px solid var(--main-color); /* Adds a border using your theme color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Make the image responsive on smaller screens */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 250px;
+        height: 330px;
+    }
+}
+
+/* Center all section titles */
+section h2,
+.skills-section h2,
+.projects-section h2,
+.contact-section h2,
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Add a decorative underline to the centered headings */
+section h2::after,
+.skills-section h2::after,
+.projects-section h2::after,
+.contact-section h2::after,
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #007BFF;
+}
+
+/* Text animation classes */
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Download CV button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff4d4d; /* New vibrant red color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid #ff4d4d;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #ff4d4d;
+    box-shadow: 0 5px 20px rgba(255, 77, 77, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Update card backgrounds to be slightly transparent */
+.software-skills, .soft-skills, .project {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Update home section background */
+.home {
+    background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Update navigation bar */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons a {
+    color: #333;
+}
+
+.nav-buttons a:hover {
+    color: #4FC3F7;
+}
+
+/* Update footer */
+footer {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Common card styling with consistent colors */
+.software-skills, .soft-skills, .project, .about-section, .contact-section {
+    background: linear-gradient(145deg, #4FC3F7, #29B6F6);
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effects */
+.software-skills:hover, 
+.soft-skills:hover, 
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2),
+                -8px -8px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Update headings inside cards */
+.software-skills h3, 
+.soft-skills h3,
+.project h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Update progress bars */
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress {
+    background: linear-gradient(90deg, #ffffff, #E3F2FD);
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+/* Update skill percentages */
+.skill-percentage {
+    color: white;
+    font-weight: bold;
+}
+
+/* Update technologies section */
+.technologies {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+.technologies strong {
+    color: #E3F2FD;
+}
+
+/* Update text color for better readability */
+.software-skills p, 
+.soft-skills p, 
+.project p,
+.about-content p {
+    color: white;
+    line-height: 1.6;
+}
+
+/* Home section styling with new colors */
+.home {
+    background: linear-gradient(145deg, #6C63FF, #4834DF);  /* Purple gradient */
+    margin: 20px;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.2);
+    color: white;
+}
+
+/* Home content styling */
+.home-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 30px;
+}
+
+.home-content h3 {
+    color: #E0E0FF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    color: white;
+    font-size: 3em;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-content span {
+    color: #FFD700;  /* Golden color for emphasis */
+}
+
+/* Profile image container */
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Update social media icons for home section */
+.home .social-media a {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.home .social-media a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Update Download CV button for home section */
+.home .btn {
+    background: #FFD700;  /* Golden color */
+    color: #4834DF;  /* Dark purple */
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.home .btn:hover {
+    background: white;
+    color: #4834DF;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #2a2d3e, #1f2235, #2a2d3e);
+    color: #ffffff;
+}
+
+/* Dark mode navigation */
+body.dark-mode nav {
+    background: rgba(26, 26, 46, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-buttons a {
+    color: #ffffff;
+}
+
+/* Dark mode home section */
+body.dark-mode .home {
+    background: linear-gradient(145deg, #30275a, #1a1a2e);
+}
+
+body.dark-mode .home-content,
+body.dark-mode .content {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Dark mode cards */
+body.dark-mode .software-skills,
+body.dark-mode .soft-skills,
+body.dark-mode .project,
+body.dark-mode .about-section,
+body.dark-mode .contact-section {
+    background: linear-gradient(145deg, #242444, #1a1a2e);
+    color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+                -5px -5px 15px rgba(255, 255, 255, 0.05);
+}
+
+/* Dark mode progress bars */
+body.dark-mode .progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .progress {
+    background: linear-gradient(90deg, #6C63FF, #4834DF);
+}
+
+/* Dark mode text colors */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: #ffffff;
+}
+
+/* Dark mode technologies section */
+body.dark-mode .technologies {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .technologies strong {
+    color: #6C63FF;
+}
+
+/* Dark mode footer */
+body.dark-mode footer {
+    background: rgba(26, 26, 46, 0.95);
+    color: #ffffff;
+}
+
+/* Dark mode theme switcher */
+body.dark-mode .theme-switch {
+    background: #1a1a2e;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .theme-switch span {
+    color: #ffffff;
+}
+
+/* Dark mode social media icons */
+body.dark-mode .social-media a {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+body.dark-mode .social-media a:hover {
+    background: rgba(108, 99, 255, 0.5);
+}
+
+/* Dark mode download CV button */
+body.dark-mode .btn {
+    background: #6C63FF;
+    color: #ffffff;
+    border-color: #6C63FF;
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.2);
+}
+
+body.dark-mode .btn:hover {
+    background: transparent;
+    color: #6C63FF;
+    box-shadow: 0 5px 20px rgba(108, 99, 255, 0.3);
+}
+
+/* Increase text sizes for better visibility */
+
+/* Portfolio name in nav */
+.portfolio-name {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* Navigation links */
+.nav-buttons a {
+    font-size: 16px;
+}
+
+/* Home section text */
+.home-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.home-content h1 {
+    font-size: 2.8em;
+    margin: 12px 0;
+}
+
+.home-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Section headings */
+section h2,
+.skills-section h2,
+.projects-section h2,
+.contact-section h2,
+h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+/* Skills section */
+.software-skills h3, 
+.soft-skills h3,
+.project h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+/* Skills list items and percentages */
+.skills-container li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.skill-percentage {
+    font-size: 1em;
+}
+
+/* Project descriptions */
+.project p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+/* Technologies text */
+.technologies {
+    font-size: 1em;
+    padding: 12px;
+}
+
+/* About section text */
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact section */
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+}
+
+/* Download CV button */
+.btn {
+    font-size: 1.1em;
+    padding: 12px 25px;
+}
+
+/* Footer text */
+footer p {
+    font-size: 1em;
+}
+
+/* Theme switcher text */
+.theme-switch span {
+    font-size: 14px;
+}
+
+/* Social media icons */
+.social-media a {
+    width: 45px;
+    height: 45px;
+}
+
+.social-media a i {
+    font-size: 1.4em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .portfolio-name {
+        font-size: 28px;
+    }
+    
+    .home-content h1 {
+        font-size: 2.4em;
+    }
+    
+    .home-content h3 {
+        font-size: 1.3em;
+    }
+    
+    section h2,
+    .skills-section h2,
+    .projects-section h2,
+    .contact-section h2,
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .social-media a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Update navigation and cards for better contrast */
+nav, 
+.software-skills, 
+.soft-skills, 
+.project, 
+.about-section, 
+.contact-section {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Footer styling with vibrant gradient */
+footer {
+    background: linear-gradient(145deg, #6C63FF, #4834DF);  /* Same as home section for consistency */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(108, 99, 255, 0.2);
+}
+
+/* Add glass effect container for footer content */
+.footer-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Footer text styling */
+.footer-content p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Footer social icons if needed */
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+}
+
+/* Dark mode footer */
+body.dark-mode footer {
+    background: linear-gradient(145deg, #30275a, #1a1a2e);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .footer-content {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* WhatsApp icon specific styling */
+.footer-social a .bxl-whatsapp {
+    font-size: 1.3em;  /* Slightly larger than other icons */
+}
+
+.footer-social a:hover .bxl-whatsapp {
+    color: #25D366;  /* WhatsApp brand color on hover */
+}
+
+/* Increase spacing between footer social icons */
+.footer-social a {
+    margin: 0 15px;  /* Increased margin for better spacing */
+}
+
+/* Project title link styling */
+.project-title {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.project-title h3 {
+    display: inline-flex;
+    align-items: center;
+    color: #6C63FF;  /* Match your theme color */
+}
+
+/* Add GitHub icon after project title */
+.project-title h3::after {
+    content: '\f09b';  /* GitHub icon unicode from boxicons */
+    font-family: 'boxicons';
+    font-size: 0.9em;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-title:hover h3 {
+    color: #4834DF;  /* Darker shade on hover */
+    transform: translateX(5px);
+}
+
+.project-title:hover h3::after {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+/* Dark mode adjustments */
+body.dark-mode .project-title h3 {
+    color: #FFD700;  /* Golden color in dark mode */
+}
+
+body.dark-mode .project-title:hover h3 {
+    color: #FFF;  /* White on hover in dark mode */
+}
+
+/* Light mode text colors */
+body {
+    color: #000000;  /* Black text in light mode */
+}
+
+h1, h2, h3, p, li, label {
+    color: #000000;
+}
+
+.nav-buttons a {
+    color: #000000;
+}
+
+.home-content h1,
+.home-content h3,
+.home-content p {
+    color: #ffffff;  /* Keep home section text white */
+}
+
+.software-skills h3, 
+.soft-skills h3,
+.project h3 {
+    color: #000000;
+}
+
+.project p,
+.about-content p,
+.contact-section p {
+    color: #000000;
+}
+
+.technologies {
+    color: #000000;
+}
+
+.technologies strong {
+    color: #6C63FF;  /* Keep accent color for emphasis */
+}
+
+.skill-percentage {
+    color: #000000;
+}
+
+/* Dark mode text colors */
+body.dark-mode {
+    color: #ffffff;  /* White text in dark mode */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-buttons a {
+    color: #ffffff;
+}
+
+body.dark-mode .software-skills h3, 
+body.dark-mode .soft-skills h3,
+body.dark-mode .project h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .project p,
+body.dark-mode .about-content p,
+body.dark-mode .contact-section p {
+    color: #ffffff;
+}
+
+body.dark-mode .technologies {
+    color: #ffffff;
+}
+
+body.dark-mode .technologies strong {
+    color: #FFD700;  /* Golden color for emphasis in dark mode */
+}
+
+body.dark-mode .skill-percentage {
+    color: #ffffff;
+}
+
+/* Form input text colors */
+.contact-form input,
+.contact-form textarea {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header and title colors with more vibrant colors */
+.portfolio-name {
+    color: #4834DF;  /* Vibrant purple for portfolio name */
+    text-shadow: 1px 1px 2px rgba(72, 52, 223, 0.1);
+}
+
+h2 {
+    color: #6C63FF;  /* Bright purple for main section headers */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;  /* Bolder font weight */
+    position: relative;
+    text-transform: uppercase;  /* Uppercase text */
+    letter-spacing: 1px;  /* Spacing between letters */
+}
+
+/* Enhanced underline effect for section headers */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #4834DF, #6C63FF);  /* Gradient underline */
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(108, 99, 255, 0.2);
+}
+
+/* Card headers with gradient text */
+.software-skills h3, 
+.soft-skills h3,
+.project h3 {
+    background: linear-gradient(90deg, #4834DF, #6C63FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* Home section headers */
+.home-content h1,
+.home-content h3 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode adjustments */
+body.dark-mode .portfolio-name {
+    color: #FFD700;  /* Gold color in dark mode */
+    text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.2);
+}
+
+body.dark-mode h2 {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode h2::after {
+    background: linear-gradient(90deg, #FFD700, #FFA500);  /* Golden gradient */
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.2);
+}
+
+body.dark-mode .software-skills h3,
+body.dark-mode .soft-skills h3,
+body.dark-mode .project h3 {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add smooth transition to nav links */
+.nav-buttons a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Add underline animation for nav links */
+.nav-buttons a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #4834DF;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-buttons a:hover::after {
+    width: 100%;
+}
+
+/* Dark mode underline color */
+body.dark-mode .nav-buttons a::after {
+    background: #FFD700;
+}
+
+/* About section styling */
+.about-section {
+    padding: 30px;
+    text-align: justify;  /* Justify text for better alignment */
+    max-width: 1200px;  /* Limit maximum width */
+    margin: 0 auto;  /* Center the section */
+}
+
+.about-content {
+    padding: 20px;
+    line-height: 1.8;  /* Increase line height for better readability */
+}
+
+.about-content p {
+    margin: 0;
+    text-indent: 30px;  /* Add paragraph indent */
+    font-size: 1.1em;
+    color: white;  /* Match other card text color */
+}
+
+/* Dark mode adjustments */
+body.dark-mode .about-content p {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+    
+    .about-content p {
+        font-size: 1em;
+        text-indent: 20px;
+    }
+}
+
+/* Responsive Design Rules */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    nav {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-buttons li {
+        margin: 5px;
+    }
+
+    /* Home section adjustments */
+    .home {
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-right: 0;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 2em;
+    }
+
+    .home-content h3 {
+        font-size: 1.2em;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 250px;
+    }
+
+    /* Skills section adjustments */
+    .skills-container {
+        padding: 10px;
+    }
+
+    .software-skills, 
+    .soft-skills {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    /* Projects section adjustments */
+    .project {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Contact form adjustments */
+    .contact-form {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    .footer-social a {
+        margin: 0 8px;
+    }
+
+    /* Social media icons adjustments */
+    .social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media a {
+        margin: 5px;
+    }
+}
+
+/* Small screen adjustments */
+@media screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 220px;
+    }
+
+    .theme-switch {
+        margin: 10px auto;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .home {
+        padding: 30px;
+    }
+
+    .home-content {
+        padding: 25px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 300px;
+    }
+
+    .software-skills, 
+    .soft-skills {
+        width: 90%;
+    }
+}
+
+/* Projects section mobile adjustments */
+@media screen and (max-width: 768px) {
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .project {
+        width: 100%;
+        margin: 15px 0;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .project h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .technologies {
+        text-align: center;
+        padding: 12px;
+        margin-top: 15px;
+    }
+
+    .project p {
+        text-align: justify;
+        padding: 10px 5px;
+    }
+
+    /* Adjust project title alignment */
+    .project-title {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Contact Section Mobile Adjustments */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .contact-section p {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .contact-section .btn {
+        display: block;
+        width: 100%;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+}
